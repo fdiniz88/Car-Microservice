@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace carMicroservice.Application.Api.Controllers
 {
     [ApiController]
-   // [Authorize(Roles = "ReserveHolder")]
+    [Authorize(Roles = "Manager,Admin")]
     [Route("api/[controller]")]
     public class CarsController : ControllerBase
     {

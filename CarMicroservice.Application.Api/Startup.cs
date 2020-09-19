@@ -47,7 +47,7 @@ namespace CarMicroservice.Application.Api
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
               .AddIdentityServerAuthentication(options =>
               {
-                  options.Authority = "https://CarMicroservice-fernando-iam-microservice-identity.azurewebsites.net";
+                  options.Authority = "https://iam-microservice-identity.azurewebsites.net";
                   options.RequireHttpsMetadata = false;
                   options.ApiName = "CarMicroservice_ResourceApi";
 
